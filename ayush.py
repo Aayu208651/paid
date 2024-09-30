@@ -12,7 +12,7 @@ def approval():
     id = "-".join(uuid)
 
     try:
-        httpCaht = requests.get('https://github.com/Aayu208651/Apprwol/tree/main').text.strip()
+        httpCaht = requests.get('https://github.com/Aayu208651/Apprwol/blob/main/apprwel.txt').text.strip()
         if id in httpCaht:
             print(Fore.GREEN + "Y0UR K3Y IS  SUC3SSFULY APPROV3D")
             msg = str(os.geteuid())
